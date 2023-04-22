@@ -9,8 +9,10 @@ local b = null_ls.builtins
 
 local sources = {
   -- webdev stuff
-  b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
-  b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } }, -- so prettier works only on these filetypes
+  -- b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
+  -- b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } }, -- so prettier works only on these filetypes
+  b.formatting.prettier, -- so prettier works only on these filetypes
+  b.formatting.mix,
 
   b.formatting.stylua,
   b.formatting.clang_format,
@@ -20,10 +22,9 @@ local sources = {
 
   -- completion and diagnostics
   b.completion.spell,
-  b.diagnostics.eslint,
 
   b.code_actions.gomodifytags,
-  b.code_actions.eslint,
+  b.code_actions.eslint_d,
 }
 
 null_ls.setup {

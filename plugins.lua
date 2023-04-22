@@ -6,6 +6,7 @@ local plugins = {
   -- Override plugin definition options
   {
     "neovim/nvim-lspconfig",
+    lazy = false,
     dependencies = {
       -- format & linting
       {
@@ -97,6 +98,7 @@ local plugins = {
   },
   {
     "mhanberg/elixir.nvim",
+    lazy = false,
     config = function()
       require("elixir").setup()
     end,
@@ -120,6 +122,7 @@ local plugins = {
   },
   {
     "nvim-lualine/lualine.nvim",
+    lazy = false,
     config = function()
       require("lualine").setup()
     end,

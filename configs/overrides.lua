@@ -34,7 +34,7 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
-    "eslint",
+    "eslint_d",
 
     "clangd",
     "clang-format",
